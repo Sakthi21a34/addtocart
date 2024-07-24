@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.product, .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.product img, .cart-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.total {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.cart-item {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.cart-item.fade-in {
+    opacity: 1;
+}
+
+h2:hover {
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+    border-radius: 30px;
+
+}
